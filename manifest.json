@@ -1,0 +1,21 @@
+{
+    "manifest_version" : 2,
+    "name" : "ZerodhaHelper",
+    "version" : "0.1.0",
+    "content_scripts" : [
+      {
+        "matches" : [
+          "https://kite.zerodha.com/*"
+        ],
+        "js" : ["content.js"]
+      }
+    ],
+    "background" : {
+      "scripts" : ["background.js"]
+    },
+    "permissions" : ["tabs"],
+    "browser_action" : {
+      "default_icon" : "z.png"
+    },
+    "web_accessible_resources": ["inject.js"]
+}
