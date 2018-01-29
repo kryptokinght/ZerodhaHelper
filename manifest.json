@@ -10,12 +10,13 @@
         "js" : ["content.js"]
       }
     ],
-    "background" : {
+    /*"background" : {
       "scripts" : ["background.js"]
-    },
+    },*/
     "permissions" : ["tabs"],
     "browser_action" : {
-      "default_icon" : "z.png"
+      "default_icon" : "z.png",
+      "default_popup": "popup.html"
     },
     "web_accessible_resources": ["inject.js"]
 }
